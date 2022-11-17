@@ -10,7 +10,7 @@ router.post('/authors', AuthorControllor.createAuthor)
 //====================Blog APIs====================//
 router.post('/authors', AuthorControllor.createAuthor)
 router.post('/blogs', BlogControllor.createBlog)
-
+router.get('/blogs', BlogControllor.getAllBlogs)
 
 
 
