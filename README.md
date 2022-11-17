@@ -1,4 +1,4 @@
-# mini-projectw
+# mini-project
 
 ## Blogging Site Mini Project 
 
