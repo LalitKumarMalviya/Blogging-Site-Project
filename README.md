@@ -1,6 +1,4 @@
-# mini-project
-
-## Blogging Site Mini Project 
+# Blogging Site Mini Project 
 
 
 ## Phase I
