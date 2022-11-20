@@ -25,7 +25,7 @@ const authentication = function (req, res, next) {
 
 //==============================[Authorisation][for Path params]=====================================\\
 
-const authByPath = async function (req, res, next) {
+const authForPath = async function (req, res, next) {
     try {
         if (!req.verifiedToken) { return res.status(401).send({ status: false, msg: "token is incorrect" }) }
 
@@ -52,7 +52,7 @@ const authByPath = async function (req, res, next) {
 
 //==============================[Authorisation][for Query params]=====================================\\
 
-const authByQuery = async function (req, res, next) {
+const authForQuery = async function (req, res, next) {
     try {
 
         if (!req.verifiedToken) { return res.status(401).send({ status: false, msg: "token is incorrect" }) }
@@ -75,6 +75,6 @@ const authByQuery = async function (req, res, next) {
 
 
 module.exports.authentication = authentication
-module.exports.authByPath = authByPath
-module.exports.authByQuery = authByQuery
+module.exports.authForPath = authForPath
+module.exports.authForQuery = authForQuery
 
