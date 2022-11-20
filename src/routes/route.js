@@ -12,10 +12,10 @@ router.post('/login', AuthorControllor.loginAuthor)
 
 //====================Blog APIs====================//
 router.post('/blogs', MW.authentication, BlogControllor.createBlog)
-router.get('/blogs', MW.authentication, MW.authByQuery, BlogControllor.getAllBlogs)
-router.put('/blogs/:blogId', MW.authentication, MW.authByPath, BlogControllor.updateBlog)
-router.delete('/blogs/:blogId', MW.authentication, MW.authByPath, BlogControllor.deleteBlog)
-router.delete('/blogs', MW.authentication, MW.authByQuery, BlogControllor.queryDelete)
+router.get('/blogs', MW.authentication, MW.authForQuery, BlogControllor.getAllBlogs)
+router.put('/blogs/:blogId', MW.authentication, MW.authForPath, BlogControllor.updateBlog)
+router.delete('/blogs/:blogId', MW.authentication, MW.authForPath, BlogControllor.deleteBlog)
+router.delete('/blogs', MW.authentication, MW.authForQuery, BlogControllor.queryDelete)
 
 
 
