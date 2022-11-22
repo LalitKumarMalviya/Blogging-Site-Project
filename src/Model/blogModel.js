@@ -6,8 +6,8 @@ const blogSchema = new mongoose.Schema({
     title: {
         type: String,
         required: true,
+        lowercase: true,
         trim: true
-
     },
 
     body: {
@@ -24,17 +24,26 @@ const blogSchema = new mongoose.Schema({
     },
 
     tags: {
-        type: [String]
+        type: [{
+            type: String,
+            lowercase: true,
+            trim: true
+        }]
     },
 
     category: {
         type: String,
         required: true,
+        lowercase: true,
         trim: true
     },
 
     subcategory: {
-        type: [String]
+        type: [{
+            type: String,
+            lowercase: true,
+            trim: true
+        }]
     },
 
     deletedAt: {
@@ -54,7 +63,6 @@ const blogSchema = new mongoose.Schema({
         type: Boolean,
         default: false
     }
-
 
 }, { timestamps: true })
 
