@@ -7,7 +7,7 @@ let nameRegex = /^[a-zA-Z]{1,20}$/
 
 let emailRegex = /^[a-z]{1}[a-z0-9._-]{1,100}[@]{1}[a-z]{2,15}[.][a-z]{2,10}$/
 
-let passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/
+// let passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/
 
 
 //----------------------------[1]-create author api-----------------------------//

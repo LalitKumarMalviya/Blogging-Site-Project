@@ -233,7 +233,7 @@ const queryDelete = async function (req, res) {
 
         let deletedData = await BlogModel.updateMany(filter,
             {
-                $set: { isDeleted: true, deletedAt: Date.now() }
+                // $set: { isDeleted: true, deletedAt: Date.now() }
             },
             { new: true }
         )
